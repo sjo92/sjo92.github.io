@@ -1,0 +1,222 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+
+:root {
+  --border-color: #144fc6;
+  --fill-color: #6ab3f8;
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #3498db;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.waterpage {
+  background: #3498db;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+h1 {
+  margin: 10px 0 0;
+}
+
+.goalLiter {
+  font-weight: 400;
+  margin: 10px 0;
+}
+
+.glass {
+  background-color: #fff;
+  color: var(--border-color);
+  border: 4px solid var(--border-color);
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  height: 330px;
+  width: 150px;
+  margin: 30px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  overflow: hidden;
+}
+
+.glass.glass-small {
+  border: 2px solid var(--border-color);
+  width: 50px;
+  height: 95px;
+  border-radius: 0 0 15px 15px;
+  background-color: rgba(255, 255, 255, 0.9);
+  cursor: pointer;
+  font-size: 14px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 5px;
+  transition: 0.3s ease;
+}
+.glass.glass-small.full {
+  background-color: var(--fill-color);
+  color: #fff;
+}
+.glasses {
+  display: flex;
+  flex-wrap: wrap;
+  width: 320px;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 30px;
+}
+
+.remained {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex: 1;
+  transition: 0.3s ease;
+}
+
+.remained span {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.remained small {
+  font-size: 12px;
+}
+.percentage {
+  background-color: var(--fill-color);
+  display: flex;
+  font-size: 30px;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 30px;
+  height: 0;
+  transition: 0.3s ease;
+}
+
+.glass-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/*
+First Page
+*/
+
+.form-container {
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 20px 40px;
+  border-radius: 5px;
+}
+
+.form-container h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  max-width: 400px;
+}
+
+.form-container a {
+  text-decoration: none;
+  color: lightblue;
+}
+
+.btn {
+  cursor: pointer;
+  display: inline-block;
+  width: 100%;
+  background: lightblue;
+  padding: 15px;
+  font-family: inherit;
+  font-size: 16px;
+  border: 0;
+  border-radius: 5px;
+}
+
+.btn:focus {
+  outline: 0;
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+.text {
+  margin-top: 30px;
+}
+
+.form-control {
+  position: relative;
+  margin: 20px 0 40px;
+  width: 300px;
+}
+
+.form-control input {
+  background-color: transparent;
+  border: 0;
+  border-bottom: 2px #fff solid;
+  display: block;
+  width: 130%;
+  padding: 15px 0;
+  font-size: 20px;
+  font-display: inherit;
+  text-align: justify;
+  color: #fff;
+}
+
+.form-control input:focus,
+.form-control input:valid {
+  outline: 0;
+  border-bottom-color: lightblue;
+}
+
+.form-control label {
+  position: absolute;
+  top: 15px;
+  left: 0;
+  pointer-events: none;
+  transform: translateY(-25px);
+}
+
+.form-control label span {
+  display: inline-block;
+  font-size: 18px;
+  min-width: 5px;
+  transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.form-control input:focus + label span,
+.form-control input:valid + label span {
+  color: lightblue;
+}
+
+.inactive {
+  display: none;
+}
+
+.btn:hover,
+.completed {
+  background-color: rgba(43, 43, 43, 0.8);
+  color: #fff;
+  font-size: 20px;
+}

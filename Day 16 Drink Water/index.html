@@ -1,0 +1,42 @@
+
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"/>
+    <!-- font-awesome  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+    <title>Drink Water</title>
+</head>
+<body>
+
+    <div class="form-container">
+        <h1>How much water do you want to drink today?</h1>
+        <div class="form-control">
+            <input type="number" min="1" max="10" required>
+            <label>Goal in Liters</label>
+        </div>
+      <button class="btn">Let's Drink Water!</button>
+    </div>
+
+
+    <div class="waterpage inactive">
+    <h1>Drink Water</h1>
+    <h3 class="goalLiter"></h3>
+    <div class="glass">
+        <div class="remained" id="remained">
+            <span id="liters"></span>
+            <small>Remained</small>
+        </div>
+        <div class="percentage" id="percentage"></div>
+    </div>
+    <p class="glass-container">See how many glasses of water that you have drank</p>
+    <div class="glasses">
+    </div>
+    <button class="btn refresh">Return</button>
+    </div>
+
+    
+    <script src="script.js"></script>
+</body>
+</html>
