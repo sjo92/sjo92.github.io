@@ -5,11 +5,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css"/>
-    <!-- font-awesome  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
-    <title>My Project</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Background Slider</title>
 </head>
 <body>
-    <h1>Project Starter</h1>
+    <div class="slider-container">
+        <div class="slide active" style="background-image: url('https://source.unsplash.com/random')"></div>
+        <div class="slide" style="background-image: url('https://source.unsplash.com/daily')"></div>
+        <div class="slide" style="background-image: url('https://source.unsplash.com/weekly')"></div>
+        <div class="slide" style="background-image: url('https://source.unsplash.com/weekly?water')"></div>
+    </div>
+
+    <button class="arrow left-arrow" id="left">
+        <i class="fas fa-arrow-left"></i>
+    </button>
+    <button class="arrow right-arrow" id="right">
+        <i class="fas fa-arrow-right"></i>
+    </button>
 
     <script src="script.js"></script>
 </body>
